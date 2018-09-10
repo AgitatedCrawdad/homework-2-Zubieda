@@ -6,3 +6,8 @@ echo "Convert Fahrenheit into Celcius"
  # formula Tc=(5/9)*(Tf-32) 
  tc=$(echo "scale=2;(5/9)*($tf-32)"|bc)
 echo "$tf = $tc"
+
+
+echo "Temperature in Kelvin" #Daniel Franken
+echo "$tc+273.15" | bc
+
